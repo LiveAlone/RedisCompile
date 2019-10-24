@@ -177,15 +177,15 @@ REDIS_CHECK_AOF_NAME=redis-check-aof
 #	@echo "Hint: It's a good idea to run 'make test' ;)"
 #	@echo ""
 
+all:
+	@echo "test condition"
+
 Makefile.dep:
 	-$(REDIS_CC) -MM *.c > Makefile.dep 2> /dev/null || true
 
 ifeq (0, $(words $(findstring $(MAKECMDGOALS), $(NODEPS))))
 -include Makefile.dep
 endif
-
-all:
-	@echo "compile all content haha"
 
 .PHONY: all
 
