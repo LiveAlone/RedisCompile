@@ -185,7 +185,7 @@ Makefile.dep:
 #endif
 
 all:
-	@echo "$(Makefile.dep)"
+	@echo "$(REDIS_CC) -MM *.c"
 
 .PHONY: all
 
