@@ -180,9 +180,9 @@ REDIS_CHECK_AOF_NAME=redis-check-aof
 all:
 	@echo "none content"
 
-#Makefile.dep:
-#	-$(REDIS_CC) -MM *.c > Makefile.dep 2> /dev/null || true
-#
+Makefile.dep:
+	-$(REDIS_CC) -MM *.c > Makefile.dep 2> /dev/null || true
+
 #ifeq (0, $(words $(findstring $(MAKECMDGOALS), $(NODEPS))))
 #-include Makefile.dep
 #endif
