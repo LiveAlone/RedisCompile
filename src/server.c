@@ -4009,6 +4009,8 @@ int main(int argc, char **argv) {
     struct timeval tv;
     int j;
 
+    serverLog(LL_DEBUG, "yaoqijun ahahh start server config ********************")
+
 #ifdef REDIS_TEST
     if (argc == 3 && !strcasecmp(argv[1], "test")) {
         if (!strcasecmp(argv[2], "ziplist")) {
